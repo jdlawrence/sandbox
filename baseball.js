@@ -1,7 +1,7 @@
 /*
 * Scorecard Constructor
 */
-
+console.log('test');
 var actions = {
   'single': 1,
   'double': 2,
