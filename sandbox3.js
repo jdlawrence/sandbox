@@ -1,24 +1,20 @@
-function magicNumber(num) {
-  if (num.toString().length === 1) {
-    return num;
-  } else {
-    var sum = num.toString().split('').reduce((a, b) => {
-      a += parseInt(b);
-      return a;
-    }, 0);
-    // debugger;
-    return magicNumber(sum)
+function telephoneGame(messages) {
+  var answer = -1;
+  debugger;
+  for (var i = 0; i < messages.length-1; i++) {
+    console.log(messages[i], messages[i+1]);
+    console.log(messages[i], messages[i] !== messages[i+1]);
+    if (messages[i] !== messages[i + 1]) {
+    //RV 1#if ( ... ) {
+      answer = i;
+      break;
+    }  
   }
+  return answer;
 }
 
-var counter = {};
+var messages = ["a", 
+ "a", 
+ "a"];
 
-for (var i = 1; i < 501; i++) {
-  var result = magicNumber(i);
-  if (counter[result]) {
-    counter[result]++;
-  } else {
-    counter[result] = 1;
-  }
-}
-console.log(counter);
+telephoneGame(messages);

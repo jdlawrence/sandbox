@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/sandbox6.js",
+            "program": "${workspaceRoot}/sandbox3.js",
             "cwd": "${workspaceRoot}"
         },
         {
